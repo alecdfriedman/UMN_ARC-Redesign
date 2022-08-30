@@ -1,0 +1,331 @@
+body {
+    background-color: #454545;
+    margin: 0;
+    padding-bottom: 100px;
+}
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 100px;
+}
+.aboveFold {
+    width: 100%;
+}
+.navContainer {
+    width: 100%;
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+nav {
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+    max-width: 1600px;
+    max-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 40px;
+    left: 0px;
+    top: 0px;
+}
+#topNavLogo {
+    max-width: 300px;
+    max-height: 100px;
+}
+.navItem {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+}
+.navItem:hover {
+    color: #f5b92e;
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+#hero {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0px;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    gap: 85px;
+    background-image: url(/assets/img/arcHeroSphynx.png);
+    background-size: cover;
+    background-position: center;
+}
+#heroGroup {
+    max-width: 1400px;
+    height: 400px;
+    flex: none;
+    width: 100%;
+}
+#heroText {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 85px;
+    line-height: 104px;
+}
+#heroButton {
+    width: fit-content;
+    height: fit-content;
+    top: 526px;
+    left: 78px;
+    border-radius: 10px;
+    padding: 17px;
+    background-color: #f5b92e;
+    color: #000000;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 42px;
+    cursor: pointer;
+}
+#heroButton:hover {
+    background-color: #fad786;
+    transition: 0.2s ease;
+}
+#foldDivider {
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+    box-sizing: border-box;
+    border: 15px solid #f5b92e;
+}
+.ctaRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    height: 235px;
+    max-width: 1600px;
+    order: 1;
+}
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    width: 526px;
+    height: 205px;
+}
+.ctaHead {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.ctaBody {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.ctaRow button {
+    margin-top: 3%;
+}
+Button {
+    text-align: center;
+    padding: 10px;
+    background: #f5b92e;
+    border-radius: 10px;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+Button:hover {
+    background-color: #fad786;
+    transition: 0.2s ease;
+}
+.contentDivider {
+    width: 90%;
+    box-sizing: border-box;
+    border: 5px solid #000000;
+    border-radius: 10px;
+    order: 2;
+}
+.opportunities {
+    margin: auto;
+    max-width: 1600px;
+    width: 100%;
+    height: 370px;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#signUp {
+    margin-left: 1.5%;
+    display: inline;
+}
+.oppsLabel {
+    padding-left: 100px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+}
+.oppsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 254px;
+    gap: 100px;
+}
+.oppCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 190px;
+    height: 190px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.oppCard:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.oppImg {
+    width: 133px;
+    height: 133px;
+    clip-path: circle(50px);
+}
+#protestsImg {
+    background-image: url(/assets/img/protest2.jpeg);
+    background-size: 347px auto;
+    background-position: 217px -51px;
+}
+#fundImg {
+    background-image: url(/assets/img/fundraising.jpg);
+    background-size: 200px auto;
+    background-position: 368px 130px;
+}
+#eventImg {
+    background-image: url(/assets/img/eventPrep.jpg);
+    background-size: 132px auto;
+    background-position: 134px 162px;
+}
+#tableImg {
+    background-image: url(/assets/img/tabling.png);
+    background-size: 113px auto;
+    background-position: 12px 126px;
+}
+#foodImg {
+    background-image: url(/assets/img/foodSampling.jpg);
+    background-size: 160px auto;
+    background-position: 120px 116px;
+}
+.calendar {
+    order: 4;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+#arcCalendar {
+    width: 100%;
+    height: 40em;
+}
+.calendarSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 60px;
+    gap: 5px;
+    margin: 0 50px;
+    width: 90%;
+    max-width: 1600px;
+    background: #232323;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    order: 4;
+}
+#calTitle {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 64px;
+    color: #ffffff;
+    margin: 0;
+}
+.calendar {
+    width: 100%;
+    border-spacing: 10px;
+}
+.calDayHead {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f5b92e;
+    border-bottom: 1px solid #f5b92e;
+    font-variant: small-caps;
+}
+.calDay {
+    width: 195px;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 14px;
+    vertical-align: top;
+    font-family: Montserrat;
+    font-weight: 550;
+    font-size: 20px;
+    color: #b3b3b3;
+    border-top: 1px solid #b3b3b3;
+}
+.calOut {
+    border-color: #5a5a5a;
+    color: #5a5a5a;
+}
+.calTopRow {
+    border: none;
+}
+.calEvents {
+    margin: 0;
+    padding: 10px 0;
+}
+.calItem {
+    width: 100%;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    background-color: rgba(245, 185, 46, 0.13);
+    color:#f5b92e;
+    cursor: pointer;
+    transition: 0.2s ease;
+    padding-left: 5px;
+    border-left: 1px solid rgba(245, 185, 46, 0.4);
+}
+.calItem:hover {
+    background-color: rgba(245, 185, 46, 0.2);
+}
