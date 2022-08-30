@@ -234,8 +234,8 @@ Button:hover {
 }
 #eventImg {
     background-image: url(/assets/atHomeEvents.jpg);
-    background-size: 132px auto;
-    background-position: 134px 162px;
+    background-size: 154px auto;
+    background-position: 0px 8px;
 }
 #tableImg {
     background-image: url(/assets/tabling.png);
